@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 ########### Set up the chart
 beers=['Love', 'Buv', 'Cuv', 'Duv']
 ibu_values=[35, 60, 85, 75]
-abv_values=[5.4, 7.1, 9.2, 4.3]
+abv_values=[36, 70, 80, 69]
 color1='lightblue'
 color2='darkgreen'
 
