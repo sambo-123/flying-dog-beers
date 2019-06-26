@@ -4,7 +4,7 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Set up the chart
-beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
+beers=['Love', 'Buv', 'Cuv', 'Duv']
 ibu_values=[35, 60, 85, 75]
 abv_values=[5.4, 7.1, 9.2, 4.3]
 color1='lightblue'
@@ -26,7 +26,7 @@ alcohol = go.Bar(
 beer_data = [bitterness, alcohol]
 beer_layout = go.Layout(
     barmode='group',
-    title = 'Beer Comparison'
+    title = 'Sam/Jess relationship - aka how much we do each of the following things'
 )
 
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
@@ -37,7 +37,7 @@ app = dash.Dash()
 server = app.server
 
 app.layout = html.Div(children=[
-    html.H1('Flying Dog Beers'),
+    html.H1('Hi Billy'),
     dcc.Graph(
         id='flyingdog',
         figure=beer_fig
